@@ -1,0 +1,161 @@
+<section id="hero" class="hero">
+	<div class="hero-content">
+		<p class="hero-greeting">Hola, soy</p>
+		<h1 class="hero-title">Manuel Jesús Curtido Rosado</h1>
+		<h2 class="hero-subtitle">Desarrollador Full-Stack | React · Next.js</h2>
+
+		<p class="hero-description">
+			Con 1,5 años de experiencia profesional construyendo aplicaciones web eficientes con React, Next.js y Node.js. Actualmente, sigo expandiendo mis competencias
+			explorando la integración de Inteligencia Artificial en el desarrollo de software y automatizando flujos de trabajo modernos con Docker y entornos Cloud.
+		</p>
+
+		<div class="hero-actions">
+			<a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+			<a href="#contact" class="btn btn-secondary">Contactar</a>
+		</div>
+	</div>
+
+	<div class="hero-visual">
+		<div class="visual-inner">
+			<span>&lt; / &gt;</span>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		min-height: 85vh;
+		display: grid;
+		grid-template-columns: 1.2fr 0.8fr;
+		gap: 2rem;
+		align-items: center;
+		padding: 2rem max(2rem, 5vw);
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero-greeting {
+		font-size: 1.2rem;
+		font-weight: 500;
+		color: var(--text);
+		opacity: 0.8;
+		margin-bottom: 0.5rem;
+	}
+
+	.hero-title {
+		font-size: clamp(2.5rem, 5vw, 4rem);
+		font-weight: 800;
+		line-height: 1.1;
+		color: var(--text);
+		margin-bottom: 1rem;
+		letter-spacing: -0.02em;
+	}
+
+	.hero-subtitle {
+		font-size: clamp(1.2rem, 3vw, 1.8rem);
+		font-weight: 600;
+		color: #23abf2;
+		margin-bottom: 1.5rem;
+	}
+
+	.hero-description {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: var(--text);
+		opacity: 0.85;
+		max-width: 600px;
+		margin-bottom: 2.5rem;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.8rem 2rem;
+		font-weight: 600;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: all 0.2s ease;
+		font-size: 1rem;
+	}
+
+	.btn-primary {
+		background: var(--text);
+		color: var(--bg);
+	}
+
+	.btn-primary:hover {
+		opacity: 0.9;
+		transform: translateY(-2px);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--text);
+		border: 2px solid rgba(125, 125, 125, 0.3);
+	}
+
+	.btn-secondary:hover {
+		border-color: var(--text);
+		transform: translateY(-2px);
+	}
+
+	.hero-visual {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.visual-inner {
+		width: 250px;
+		height: 250px;
+		background: rgba(125, 125, 125, 0.03);
+		border: 1px solid rgba(125, 125, 125, 0.15);
+		border-radius: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		font-weight: bold;
+		color: rgba(125, 125, 125, 0.3);
+		backdrop-filter: blur(5px);
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			grid-template-columns: 1fr;
+			text-align: center;
+			padding-top: 4rem;
+		}
+
+		.hero-description {
+			margin: 0 auto 2.5rem auto;
+		}
+
+		.hero-actions {
+			justify-content: center;
+		}
+
+		.hero-visual {
+			order: -1;
+			margin-bottom: 1.5rem;
+		}
+
+		.visual-inner {
+			width: 180px;
+			height: 180px;
+		}
+	}
+</style>
