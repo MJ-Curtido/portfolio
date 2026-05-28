@@ -1,32 +1,35 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	scrollbar-width: thin;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
     scrollbar-color: var(--header-bg) transparent;
+}
+section[id] {
+    scroll-margin-top: 14rem;
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
-	--bg: white;
-	--header-bg: #f5f5f5;
-	--text: black;
+    --bg: white;
+    --header-bg: #f5f5f5;
+    --text: black;
 }
 
 .dark {
-	--bg: #212830;
-	--header-bg: #151b23;
-	--text: #d1d7e0;
+    --bg: #212830;
+    --header-bg: #151b23;
+    --text: #d1d7e0;
 }
 
 body {
-	background: var(--bg);
-	color: var(--text);
-	font-family: 'Inter', sans-serif;
-	transition:
-		background 0.3s,
-		color 0.3s;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    transition:
+        background 0.3s,
+        color 0.3s;
 }

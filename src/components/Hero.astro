@@ -1,161 +1,157 @@
-<section id="hero" class="hero">
-	<div class="hero-content">
-		<p class="hero-greeting">Hola, soy</p>
-		<h1 class="hero-title">Manuel Jesús Curtido Rosado</h1>
-		<h2 class="hero-subtitle">Desarrollador Full-Stack | React · Next.js</h2>
+<section id="hero">
+    <div id="hero-content">
+        <div id="hero-introduction">
+            <p id="hero-greeting">Hola, soy</p>
+            <h1 id="hero-title">Manuel Jesús Curtido Rosado</h1>
+            <h2 id="hero-subtitle">Desarrollador Full-Stack | React · Next.js</h2>
 
-		<p class="hero-description">
-			Con 1,5 años de experiencia profesional construyendo aplicaciones web eficientes con React, Next.js y Node.js. Actualmente, sigo expandiendo mis competencias
-			explorando la integración de Inteligencia Artificial en el desarrollo de software y automatizando flujos de trabajo modernos con Docker y entornos Cloud.
-		</p>
+            <p id="hero-description">
+                Con 1,5 años de experiencia profesional construyendo y refactorizando aplicaciones web eficientes con React, Next.js y Redux Saga en
+                JavaScript. Me enfocaba en la optimización continua del código y en el mantenimiento evolutivo según los requerimientos del cliente.
+                Actualmente, continúo expandiendo mis competencias en el lado del servidor especializándome en Node.js, al mismo tiempo que exploro la
+                integración de Inteligencia Artificial en el desarrollo de software y la automatización de flujos de trabajo modernos con Docker.
+            </p>
+        </div>
 
-		<div class="hero-actions">
-			<a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-			<a href="#contact" class="btn btn-secondary">Contactar</a>
-		</div>
-	</div>
-
-	<div class="hero-visual">
-		<div class="visual-inner">
-			<span>&lt; / &gt;</span>
-		</div>
-	</div>
+        <div id="hero-visual">
+            <div id="visual-inner">
+                <span>&lt; / &gt;</span>
+            </div>
+        </div>
+    </div>
+    <section id="hero-actions">
+        <a
+            href="https://www.linkedin.com/in/manuel-jes%C3%BAs-curtido-rosado-2337a726a"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hero-buttons">LinkedIn</a
+        >
+        <a href="https://github.com/MJ-Curtido" target="_blank" rel="noopener noreferrer" class="hero-buttons">GitHub</a>
+        <a href="mailto:manu17pc@gmail.com" class="hero-buttons">Email</a>
+        <a href="tel:+34610925034" class="hero-buttons">Teléfono</a>
+    </section>
 </section>
 
 <style>
-	.hero {
-		min-height: 85vh;
-		display: grid;
-		grid-template-columns: 1.2fr 0.8fr;
-		gap: 2rem;
-		align-items: center;
-		padding: 2rem max(2rem, 5vw);
-		max-width: 1200px;
-		margin: 0 auto;
-	}
+    #hero-content {
+        align-items: center;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1.2fr 0.8fr;
+        margin: 0 auto;
+        max-width: 1200px;
+        min-height: 85vh;
+        padding: 2rem max(2rem, 5vw);
+    }
 
-	.hero-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+    #hero-introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-	.hero-greeting {
-		font-size: 1.2rem;
-		font-weight: 500;
-		color: var(--text);
-		opacity: 0.8;
-		margin-bottom: 0.5rem;
-	}
+    #hero-greeting {
+        color: var(--text);
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        opacity: 0.8;
+    }
 
-	.hero-title {
-		font-size: clamp(2.5rem, 5vw, 4rem);
-		font-weight: 800;
-		line-height: 1.1;
-		color: var(--text);
-		margin-bottom: 1rem;
-		letter-spacing: -0.02em;
-	}
+    #hero-title {
+        color: var(--text);
+        font-size: 3.7rem;
+        margin-bottom: 1rem;
+    }
 
-	.hero-subtitle {
-		font-size: clamp(1.2rem, 3vw, 1.8rem);
-		font-weight: 600;
-		color: #23abf2;
-		margin-bottom: 1.5rem;
-	}
+    #hero-subtitle {
+        color: #23abf2;
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
 
-	.hero-description {
-		font-size: 1.1rem;
-		line-height: 1.6;
-		color: var(--text);
-		opacity: 0.85;
-		max-width: 600px;
-		margin-bottom: 2.5rem;
-	}
+    #hero-description {
+        text-align: justify;
+        color: var(--text);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        opacity: 0.85;
+    }
 
-	.hero-actions {
-		display: flex;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
+    #hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
 
-	.btn {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0.8rem 2rem;
-		font-weight: 600;
-		border-radius: 8px;
-		text-decoration: none;
-		transition: all 0.2s ease;
-		font-size: 1rem;
-	}
+    .hero-buttons {
+        align-items: center;
+        background: transparent;
+        border-radius: 20px;
+        border: 2px solid rgba(125, 125, 125, 0.3);
+        color: var(--text);
+        display: inline-flex;
+        font-size: 1rem;
+        font-weight: 600;
+        justify-content: center;
+        padding: 0.8rem 2rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
 
-	.btn-primary {
-		background: var(--text);
-		color: var(--bg);
-	}
+    .hero-buttons:hover {
+        border-color: var(--text);
+        transform: translateY(-2px);
+    }
 
-	.btn-primary:hover {
-		opacity: 0.9;
-		transform: translateY(-2px);
-	}
+    #hero-visual {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
 
-	.btn-secondary {
-		background: transparent;
-		color: var(--text);
-		border: 2px solid rgba(125, 125, 125, 0.3);
-	}
+    #visual-inner {
+        align-items: center;
+        backdrop-filter: blur(5px);
+        background: rgba(125, 125, 125, 0.03);
+        border-radius: 24px;
+        border: 1px solid rgba(125, 125, 125, 0.15);
+        color: rgba(125, 125, 125, 0.3);
+        display: flex;
+        font-size: 3rem;
+        font-weight: bold;
+        height: 250px;
+        justify-content: center;
+        width: 250px;
+    }
 
-	.btn-secondary:hover {
-		border-color: var(--text);
-		transform: translateY(-2px);
-	}
+    @media (max-width: 768px) {
+        #hero {
+            grid-template-columns: 1fr;
+            padding-top: 4rem;
+            text-align: center;
+        }
 
-	.hero-visual {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+        #hero-description {
+            margin: 0 auto 2.5rem auto;
+        }
 
-	.visual-inner {
-		width: 250px;
-		height: 250px;
-		background: rgba(125, 125, 125, 0.03);
-		border: 1px solid rgba(125, 125, 125, 0.15);
-		border-radius: 24px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 3rem;
-		font-weight: bold;
-		color: rgba(125, 125, 125, 0.3);
-		backdrop-filter: blur(5px);
-	}
+        #hero-actions {
+            justify-content: center;
+        }
 
-	@media (max-width: 768px) {
-		.hero {
-			grid-template-columns: 1fr;
-			text-align: center;
-			padding-top: 4rem;
-		}
+        #hero-visual {
+            margin-bottom: 1.5rem;
+            order: -1;
+        }
 
-		.hero-description {
-			margin: 0 auto 2.5rem auto;
-		}
-
-		.hero-actions {
-			justify-content: center;
-		}
-
-		.hero-visual {
-			order: -1;
-			margin-bottom: 1.5rem;
-		}
-
-		.visual-inner {
-			width: 180px;
-			height: 180px;
-		}
-	}
+        #visual-inner {
+            height: 180px;
+            width: 180px;
+        }
+    }
 </style>
