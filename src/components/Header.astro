@@ -1,7 +1,7 @@
 <header class="header">
     <nav id="nav">
         <a href="#hero">Inicio</a>
-        <a href="#hero-actions">Contacto</a>
+        <a href="#stack">Stack</a>
         <a href="#about">Experiencia</a>
         <a href="#projects">Proyectos</a>
 
@@ -42,7 +42,8 @@
 
 <style>
     .header {
-        background: var(--header-bg);
+        backdrop-filter: blur(12px);
+        background-color: var(--header-bg);
         margin: 0;
         padding: 1rem;
         position: sticky;
@@ -50,13 +51,12 @@
         transition:
             background 0.3s,
             color 0.3s;
-        z-index: 50;
+        z-index: 100;
+        -webkit-backdrop-filter: blur(12px);
     }
 
     #nav {
-        -webkit-backdrop-filter: blur(10px);
         align-items: center;
-        backdrop-filter: blur(10px);
         border-radius: 12px;
         display: flex;
         gap: 1.5rem;

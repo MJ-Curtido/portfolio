@@ -19,7 +19,8 @@
             </div>
         </div>
     </div>
-    <section id="hero-actions">
+
+    <section id="hero-action">
         <a
             href="https://www.linkedin.com/in/manuel-jes%C3%BAs-curtido-rosado-2337a726a"
             target="_blank"
@@ -33,15 +34,17 @@
 </section>
 
 <style>
+    #hero {
+        margin: 0 auto;
+        max-width: var(--max-width-pc);
+        padding: 4rem var(--page-padding);
+    }
+
     #hero-content {
         align-items: center;
         display: grid;
         gap: 2rem;
         grid-template-columns: 1.2fr 0.8fr;
-        margin: 0 auto;
-        max-width: 1200px;
-        min-height: 85vh;
-        padding: 2rem max(2rem, 5vw);
     }
 
     #hero-introduction {
@@ -66,26 +69,25 @@
 
     #hero-subtitle {
         color: #23abf2;
-        font-size: clamp(1.2rem, 3vw, 1.8rem);
         font-weight: 600;
         margin-bottom: 1.5rem;
     }
 
     #hero-description {
-        text-align: justify;
+        text-align: left;
         color: var(--text);
         font-size: 1.1rem;
         line-height: 1.6;
-        margin-bottom: 2.5rem;
-        max-width: 600px;
         opacity: 0.85;
     }
 
-    #hero-actions {
+    #hero-action {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+        max-width: 1200px;
+        margin: 3rem auto 0 auto;
     }
 
     .hero-buttons {
@@ -127,31 +129,5 @@
         height: 250px;
         justify-content: center;
         width: 250px;
-    }
-
-    @media (max-width: 768px) {
-        #hero {
-            grid-template-columns: 1fr;
-            padding-top: 4rem;
-            text-align: center;
-        }
-
-        #hero-description {
-            margin: 0 auto 2.5rem auto;
-        }
-
-        #hero-actions {
-            justify-content: center;
-        }
-
-        #hero-visual {
-            margin-bottom: 1.5rem;
-            order: -1;
-        }
-
-        #visual-inner {
-            height: 180px;
-            width: 180px;
-        }
     }
 </style>

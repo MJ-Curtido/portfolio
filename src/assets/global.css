@@ -1,3 +1,13 @@
+:root {
+    /* Uniform and limited separation for containers */
+    --page-padding: max(2rem, 5vw);
+    /* Global width for containers */
+    --max-width-pc: 1200px;
+    /* Device sizes */
+    --mobile-media: 640px;
+    --tablet-media: 1024px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +15,10 @@
     scrollbar-width: thin;
     scrollbar-color: var(--header-bg) transparent;
 }
+
+/* Fixes header overlap when anchor scrolls */
 section[id] {
-    scroll-margin-top: 14rem;
+    scroll-margin-top: 7rem;
 }
 
 html {
@@ -15,13 +27,13 @@ html {
 
 :root {
     --bg: white;
-    --header-bg: #f5f5f5;
+    --header-bg: rgba(235, 235, 235, 0.7);
     --text: black;
 }
 
 .dark {
     --bg: #212830;
-    --header-bg: #151b23;
+    --header-bg: rgba(10, 15, 30, 0.7);
     --text: #d1d7e0;
 }
 

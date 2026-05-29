@@ -1,0 +1,120 @@
+<section id="stack">
+    <h2 id="skills-title">Stack Técnico</h2>
+    <div id="skills-grid">
+        <div class="skill-card">
+            <h3>Desarrollo Core</h3>
+            <div class="skill-subgroup">
+                <h4>Frontend</h4>
+                <ul>
+                    <li>React · Next.js</li>
+                    <li>Redux Toolkit / Saga</li>
+                    <li>Angular</li>
+                    <li>Astro</li>
+                    <li>HTML & CSS / SCSS</li>
+                </ul>
+            </div>
+            <div class="skill-subgroup second">
+                <h4>Backend</h4>
+                <ul>
+                    <li>Node.js · Express.js</li>
+                    <li>MongoDB · Mongoose</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Lenguajes y Herramientas</h3>
+            <div class="skill-subgroup">
+                <h4>Lenguajes</h4>
+                <ul>
+                    <li>JavaScript (ES6+)</li>
+                    <li>TypeScript</li>
+                </ul>
+            </div>
+            <div class="skill-subgroup second">
+                <h4>Infraestructura y Herramientas</h4>
+                <ul>
+                    <li>Docker</li>
+                    <li>Git / GitHub</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Exploración e Innovación</h3>
+            <div class="skill-subgroup">
+                <h4>Inteligencia Artificial</h4>
+                <ul>
+                    <li>Integración de APIs Generativas</li>
+                    <li>Spec-driven y protocolos MCP</li>
+                    <li>Desarrollo básico de Apps de IA con Python, Gemini API y Streamlit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #stack {
+        margin: 0 auto;
+        max-width: var(--max-width-pc);
+        padding: 4rem var(--page-padding);
+    }
+
+    #skills-title {
+        color: var(--text);
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+    }
+
+    #skills-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill-card {
+        backdrop-filter: blur(5px);
+        background: rgba(125, 125, 125, 0.03);
+        border-radius: 16px;
+        border: 1px solid rgba(125, 125, 125, 0.15);
+        padding: 1.5rem;
+    }
+
+    .skill-card h3 {
+        color: #23abf2;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .skill-subgroup.second {
+        margin-top: 1rem;
+    }
+
+    .skill-subgroup h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .skill-subgroup ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skill-subgroup li {
+        align-items: center;
+        color: var(--text);
+        display: flex;
+        font-size: 1rem;
+        justify-content: space-between;
+        opacity: 0.85;
+    }
+</style>
