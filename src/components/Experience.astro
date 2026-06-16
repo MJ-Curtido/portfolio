@@ -1,0 +1,125 @@
+<section id="experiencia">
+    <h2>Experiencia Laboral</h2>
+    <div class="timeline">
+        <!-- Freelance Project
+        TODO: Add it when I start the project
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Desarrollador Full-Stack (Freelance)</h3>
+                <span class="job-date">Junio 2026 - Presente</span>
+            </div>
+            <p class="job-company">Proyecto Independiente · Desarrollo de Software</p>
+            <ul class="job-description">
+                <li>
+                    Diseño y desarrollo integral de una plataforma web comercial para una marca de indumentaria, implementando Next.js, React y
+                    Tailwind CSS para optimizar la velocidad de carga.
+                </li>
+                <li>
+                    Diseño e integración de servicios de backend robustos con Node.js, Express y gestión de datos NoSQL utilizando MongoDB y Mongoose.
+                </li>
+                <li>
+                    Contenedorización de la aplicación utilizando Docker para automatizar los entornos locales y simplificar los flujos de despliegue.
+                </li>
+            </ul>
+        </div>
+        -->
+
+        <!-- SOFGESA S.L. job -->
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Desarrollador Front-End</h3>
+                <span class="job-date">Marzo 2023 – Julio 2024</span>
+            </div>
+            <p class="job-company">SOFGESA S.L. (Jerez de la Frontera, España)</p>
+            <ul class="job-description">
+                <li>Desarrollo y mantenimiento de más de 5 aplicaciones web responsivas utilizando el stack React, Next.js y Redux Saga.</li>
+                <li>
+                    Optimización de rendimiento mediante la implementación de flujos de datos complejos con Redux Saga, mejorando la eficiencia de las
+                    llamadas a APIs y estrategias de caché.
+                </li>
+                <li>
+                    Extensión de funcionalidades mediante el desarrollo de plugins personalizados en JavaScript y PHP para sitios WordPress de
+                    diversos clientes.
+                </li>
+                <li>Garantía de calidad y compatibilidad UI/UX en los principales navegadores modernos y dispositivos móviles.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style>
+    #experiencia {
+        margin: 0 auto;
+        max-width: var(--max-width-pc);
+        padding: 4rem var(--page-padding);
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        margin: 2.5rem auto 0 auto;
+        max-width: 850px;
+    }
+
+    .job-card {
+        border-left: 2px solid var(--border-accent);
+        padding-left: 2rem;
+        position: relative;
+    }
+
+    .job-card::before {
+        background-color: var(--highlight);
+        border-radius: 50%;
+        border: 2px solid #0f172a;
+        content: '';
+        height: 10px;
+        left: -8px;
+        position: absolute;
+        top: 6px;
+        width: 10px;
+    }
+
+    .job-header {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .job-header h3 {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .job-date {
+        font-size: 0.9rem;
+        font-weight: 500;
+        opacity: 0.6;
+    }
+
+    .job-company {
+        color: var(--highlight);
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin: 0.35rem 0 1.2rem 0;
+    }
+
+    .job-description {
+        line-height: 1.7;
+        margin: 0;
+        opacity: 0.85;
+        padding-left: 1.2rem;
+    }
+
+    .job-description li {
+        margin-bottom: 0.65rem;
+    }
+
+    .job-description li:last-child {
+        margin-bottom: 0;
+    }
+</style>

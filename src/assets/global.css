@@ -1,8 +1,17 @@
 :root {
+    /* Default colours */
+    --bg: white;
+    --border-accent: rgba(255, 255, 255, 0.1);
+    --header-bg: rgba(235, 235, 235, 0.7);
+    --highlight: #23abf2;
+    --text: black;
+
     /* Uniform and limited separation for containers */
     --page-padding: max(2rem, 5vw);
-    /* Global width for containers */
+
+    /* Max width for containers */
     --max-width-pc: 1200px;
+
     /* Device sizes */
     --mobile-media: 640px;
     --tablet-media: 1024px;
@@ -25,13 +34,8 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --bg: white;
-    --header-bg: rgba(235, 235, 235, 0.7);
-    --text: black;
-}
-
 .dark {
+    /* Dark mode colours */
     --bg: #212830;
     --header-bg: rgba(10, 15, 30, 0.7);
     --text: #d1d7e0;
